@@ -9,8 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        dark: "rgb(var(--background-dark) / <alpha-value>)",
+        linen: "hsl(var(--background-linen) / <alpha-value>)",
+        "light-gray": "hsl(var(--background-light-gray) / <alpha-value>)",
+        "dark-blue": "hsl(var(--color-dark-blue) / <alpha-value>)",
       },
     },
   },
