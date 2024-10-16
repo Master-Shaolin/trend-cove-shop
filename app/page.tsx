@@ -1,27 +1,12 @@
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/Carousel/Carousel";
-
 export default function Home() {
   return (
-    <div className="flex w-full items-center justify-center">
-      <Carousel
-        opts={{
-          loop: true,
-        }}
-      >
-        <CarouselContent>
-          <CarouselItem>1</CarouselItem>
-          <CarouselItem>2</CarouselItem>
-          <CarouselItem>3</CarouselItem>
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
-    </div>
+    <>
+      {/*<header className="relative z-20 w-full h-16 sm:h-20 lg:h-24">
+        <Navbar />
+      </header>
+      <main className="flex w-full items-center justify-center">
+        <Dashboard />
+      </main>*/}
+    </>
   );
 }
