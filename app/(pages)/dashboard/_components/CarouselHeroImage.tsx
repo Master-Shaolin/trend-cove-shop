@@ -1,11 +1,14 @@
-import mainSlider1 from "/public/images/main-slider-1.jpg";
 
-const CarouselHeroImage = () => {
+interface CarouselHeroImageProps {
+  src: string
+}
+
+const CarouselHeroImage = ({src}:CarouselHeroImageProps) => {
   return (
-    <div className="h-full px-1.5">
+    <div className="size-full px-1.5">
       <img
-        className="bg-gray-300 object-cover w-full rounded-md"
-        src={mainSlider1.src}
+        className="bg-gray-300 object-cover size-full rounded-md"
+        src={src}
       />
     </div>
   );
