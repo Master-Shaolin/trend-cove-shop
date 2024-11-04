@@ -47,32 +47,32 @@ const Navbar = ({ isScrolling }: NavbarProps) => {
               {navItem.hasMenu ? (
                 <div className="absolute flex items-start justify-center h-96 w-full">
                   <div className="relative w-full">
-                  <DropdownMenu open={true}>
-                  {navItem.menu?.map((menu, mIndex) => (
-                    <DropdownMenuContent
-                      key={mIndex}
-                      className="bg-slate-50 w-56 rounded p-1 border border-zinc-300"
-                      align="center"
-                    >
-                      <DropdownMenuLabel className="font-semibold">
-                        {menu.title}
-                      </DropdownMenuLabel>
-                      <DropdownMenuSeparator className="my-1 h-px bg-slate-300" />
-                      <DropdownMenuItem className="cursor-pointer">
-                        Profile
-                      </DropdownMenuItem>
-                      <DropdownMenuItem className="cursor-pointer">
-                        Billing
-                      </DropdownMenuItem>
-                      <DropdownMenuItem className="cursor-pointer">
-                        Team
-                      </DropdownMenuItem>
-                      <DropdownMenuItem className="cursor-pointer">
-                        Subscription
-                      </DropdownMenuItem>
-                    </DropdownMenuContent>
-                  ))}
-                </DropdownMenu>
+                    <DropdownMenu open={true}>
+                      {navItem.menus?.map((menu, mIndex) => (
+                        <DropdownMenuContent
+                          key={mIndex}
+                          className="bg-slate-50 w-56 rounded p-1 border border-zinc-300"
+                          align="center"
+                        >
+                          <DropdownMenuLabel className="font-semibold">
+                            {menu.title}
+                          </DropdownMenuLabel>
+                          <DropdownMenuSeparator className="my-1 h-px bg-slate-300" />
+                          <DropdownMenuItem className="cursor-pointer">
+                            Profile
+                          </DropdownMenuItem>
+                          <DropdownMenuItem className="cursor-pointer">
+                            Billing
+                          </DropdownMenuItem>
+                          <DropdownMenuItem className="cursor-pointer">
+                            Team
+                          </DropdownMenuItem>
+                          <DropdownMenuItem className="cursor-pointer">
+                            Subscription
+                          </DropdownMenuItem>
+                        </DropdownMenuContent>
+                      ))}
+                    </DropdownMenu>
                   </div>
                 </div>
               ) : (

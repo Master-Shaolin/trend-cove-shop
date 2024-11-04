@@ -6,7 +6,7 @@ const navBarItems: NavBarItem[] = [
     title: "Men Wear",
     url: "/",
     hasMenu: true,
-    menu: [
+    menus: [
       {
         id: "79d70edd-ee36-40b9-9796-55445b7a7983",
         title: "Top Wear",

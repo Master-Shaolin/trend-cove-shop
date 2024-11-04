@@ -3,7 +3,7 @@ export interface NavBarItem {
   title: string;
   url: string;
   hasMenu: boolean;
-  menu?: NavBarItemMenu[];
+  menus?: NavBarItemMenu[];
 }
 
 export interface NavBarItemMenu {
