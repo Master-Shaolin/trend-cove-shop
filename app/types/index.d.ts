@@ -7,6 +7,10 @@ export interface NavBarItem {
 }
 
 export interface NavBarItemMenu {
+  submenus: NavBarSubMenu[];
+}
+
+export interface NavBarSubMenu {
   id: string;
   title: string;
   url: string;

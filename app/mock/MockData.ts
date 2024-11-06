@@ -8,29 +8,108 @@ const navBarItems: NavBarItem[] = [
     hasMenu: true,
     menus: [
       {
-        id: "79d70edd-ee36-40b9-9796-55445b7a7983",
-        title: "Top Wear",
-        url: "",
-        childs: [
+        submenus: [
           {
-            id: "c2e196b7-4355-4616-8553-8a75d4c7e24d",
-            title: "T-Shirt",
-            url: "/",
+            id: "79d70edd-ee36-40b9-9796-55445b7a7983",
+            title: "Top Wear",
+            url: "",
+            childs: [
+              {
+                id: "c2e196b7-4355-4616-8553-8a75d4c7e24d",
+                title: "T-Shirt",
+                url: "/",
+              },
+              {
+                id: "7fb9f2ec-f3ce-4071-8094-6882de338598",
+                title: "Casual Shirts",
+                url: "/",
+              },
+              {
+                id: "44dcf2be-ae68-4e3d-9605-0c29f4bc9ba6",
+                title: "Formal Shirts",
+                url: "/",
+              },
+              {
+                id: "f30ec831-1fb1-4024-88ea-a7dd57ac8091",
+                title: "Blazwers & Coats",
+                url: "/",
+              },
+              {
+                id: "3e5ba974-bbfb-40c4-9f4b-17ab8b9b9b2a",
+                title: "Suits",
+                url: "/",
+              },
+              {
+                id: "3e5ba974-bbfb-40c4-9f4b-17ab8b9b9b2a",
+                title: "Jackets",
+                url: "/",
+              },
+            ],
           },
           {
-            id: "7fb9f2ec-f3ce-4071-8094-6882de338598",
-            title: "Casual Shirts",
-            url: "/",
+            id: "0ff7ed27-7709-42dc-b30a-cd611a166053",
+            title: "Belt, Scarves & More",
+            url: "",
+            childs: undefined,
           },
           {
-            id: "44dcf2be-ae68-4e3d-9605-0c29f4bc9ba6",
-            title: "Formal Shirts",
-            url: "/",
+            id: "0c4eac4f-4975-43a2-9c65-6e733a8ccf37",
+            title: "Watches & Wearables",
+            url: "",
+            childs: undefined,
+          },
+        ],
+      },
+      {
+        submenus: [
+          {
+            id: "79d70edd-ee36-40b9-9796-55445b7a7983",
+            title: "Western Wear",
+            url: "",
+            childs: [
+              {
+                id: "c2e196b7-4355-4616-8553-8a75d4c7e24d",
+                title: "Dresses",
+                url: "/",
+              },
+              {
+                id: "7fb9f2ec-f3ce-4071-8094-6882de338598",
+                title: "Jumpsuits",
+                url: "/",
+              },
+              {
+                id: "4ec5db6f-e5bc-4c15-9139-96083a2108fd",
+                title: "Tops, T-Shirts & Shirts",
+                url: "/",
+              },
+              {
+                id: "98de2d49-c578-4d56-8176-c6b70ff1f56f",
+                title: "Shorts & Skirts",
+                url: "/",
+              },
+              {
+                id: "9538800c-720d-4d79-8b3f-edc52c90dc53",
+                title: "Shrugs",
+                url: "/",
+              },
+              {
+                id: "282b1812-5595-4f50-bdc0-4b71025d098d",
+                title: "Blazers",
+                url: "/",
+              },
+            ],
           },
           {
-            id: "f30ec831-1fb1-4024-88ea-a7dd57ac8091",
-            title: "Blazwers & Coats",
-            url: "/",
+            id: "09af88cb-ee50-4740-a816-e799fc63d03c",
+            title: "Plus size",
+            url: "",
+            childs: undefined,
+          },
+          {
+            id: "56f67b45-3af7-4b90-b936-d6234dbc6741",
+            title: "Sunglasses & Frames",
+            url: "",
+            childs: undefined,
           },
         ],
       },

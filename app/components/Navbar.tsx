@@ -11,6 +11,9 @@ import {
   NavigationMenuTrigger,
 } from "@radix-ui/react-navigation-menu";
 import { IoIosArrowDown } from "react-icons/io";
+import { LuSearch } from "react-icons/lu";
+import { PiShoppingBag } from "react-icons/pi";
+import { Button } from "./ui/Button/Button";
 
 interface NavbarProps {
   isScrolling: boolean;
@@ -44,26 +47,33 @@ const Navbar = ({ isScrolling }: NavbarProps) => {
                     )}
                   </NavigationMenuTrigger>
                   {navItem.hasMenu ? (
-                    <NavigationMenuContent className="min-w-full absolute flex top-full bg-zinc-50">
+                    <NavigationMenuContent className="min-w-full absolute flex top-full bg-zinc-50 animate-fadeInUpMenu">
                       {navItem.menus?.map((menu, menuIndex) => (
                         <div
                           key={menuIndex}
                           className="flex flex-col min-w-60 even:bg-gray-100 py-5"
                         >
-                          <NavigationMenuLink className="flex items-center py-2 ltr:pl-5 rtl:pr-5 ltr:xl:pl-7 rtl:xl:pr-7 ltr:pr-3 rtl:pl-3 ltr:xl:pr-3.5 rtl:xl:pl-3.5 hover:text-heading hover:bg-gray-300">
-                            <span className="text-dark font-semibold">
-                              {menu.title}
-                            </span>
-                          </NavigationMenuLink>
-                          {menu.childs &&
-                            menu.childs.map((mChild, mChildIndex) => (
-                              <NavigationMenuLink
-                                key={mChildIndex}
-                                className="flex items-center py-2 ltr:pl-5 rtl:pr-5 ltr:xl:pl-7 rtl:xl:pr-7 ltr:pr-3 rtl:pl-3 ltr:xl:pr-3.5 rtl:xl:pl-3.5 hover:text-heading hover:bg-gray-300"
-                              >
-                                {mChild.title}
+                          {menu.submenus.map((submenu, sIndex) => (
+                            <div key={sIndex}>
+                              <NavigationMenuLink className="flex items-center py-2 ltr:pl-5 rtl:pr-5 ltr:xl:pl-7 rtl:xl:pr-7 ltr:pr-3 rtl:pl-3 ltr:xl:pr-3.5 rtl:xl:pl-3.5 hover:text-heading hover:bg-gray-300">
+                                <span className="text-dark font-semibold">
+                                  {submenu.title}
+                                </span>
                               </NavigationMenuLink>
-                            ))}
+                              {submenu.childs &&
+                                submenu.childs.map((sChild, sChildIndex) => (
+                                  <NavigationMenuLink
+                                    key={sChildIndex}
+                                    className="flex items-center py-2 ltr:pl-5 rtl:pr-5 ltr:xl:pl-7 rtl:xl:pr-7 ltr:pr-3 rtl:pl-3 ltr:xl:pr-3.5 rtl:xl:pl-3.5 hover:text-heading hover:bg-gray-300"
+                                  >
+                                    {sChild.title}
+                                  </NavigationMenuLink>
+                                ))}
+                              {
+                                submenu.childs ? <hr />: ""
+                              }
+                            </div>
+                          ))}                          
                         </div>
                       ))}
                     </NavigationMenuContent>
@@ -75,6 +85,34 @@ const Navbar = ({ isScrolling }: NavbarProps) => {
             </div>
           </NavigationMenuList>
         </NavigationMenu>
+        <div className="items-center justify-end flex-shrink-0 hidden lg:flex gap-x-6 lg:gap-x-5 xl:gap-x-8 2xl:gap-x-10 ltr:ml-auto rtl:mr-auto">
+          <Button
+            variant={"text"}
+            size="text"
+            className="relative flex items-center justify-center flex-shrink-0 h-auto transform focus:outline-none"
+          >
+            <LuSearch className="w-6 h-6" />
+          </Button>
+          <div className="-mt-0.5 flex-shrink-0">
+            <Button
+              variant={"text"}
+              size="text"
+              className="text-sm font-semibold xl:text-base text-heading"
+            >
+              Sing in
+            </Button>
+          </div>
+          <Button
+            variant={"text"}
+            size="text"
+            className="relative flex items-center justify-center flex-shrink-0 h-auto font-normal transform focus:outline-none"
+          >
+            <div className="flex items-center justify-center bg-dark text-white font-bold w-5 h-5 absolute text-[10px] rounded-full -top-2 left-4">
+              0
+            </div>
+            <PiShoppingBag className="w-7 h-7" />
+          </Button>
+        </div>
       </div>
     </div>
   );
