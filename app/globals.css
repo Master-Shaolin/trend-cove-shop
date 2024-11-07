@@ -9,3 +9,11 @@
 
   --color-dark-blue: 240 34.4% 12%; /* #141429 */
 }
+
+.menu-item-transition::after {
+  transition: all 300ms linear;
+}
+
+.menu-item-transition:hover::after {
+  transition: width 300ms linear;
+}

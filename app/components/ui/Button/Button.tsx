@@ -16,7 +16,7 @@ const buttonVariants = cva(
         secondary:
           "border border-solid border-text-dark bg-zinc-50 text-dark hover:border-gray-700 hover:bg-gray-700 hover:text-white disabled:border-none disabled:bg-background-light disabled:text-text-gray disabled:opacity-100",
         text: 
-          "text-text-primary inline-flex items-start gap-0 rounded-sm bg-inherit p-0 text-center text-sm hover:bg-zinc-100",
+          "text-text-primary inline-flex items-start gap-0 rounded-sm bg-inherit p-0 text-center text-sm hover:bg-transparent hover:text-dark",
       },
       size: {
         xs: "rounded-full p-0.5",
