@@ -1166,7 +1166,7 @@ const config: Config = {
       fadeInBounceLeft: "fade-in-bounce-left 1s ease-in-out 0.25s 1",
       fadeInRight: "fade-in-right 1s ease-in-out 0.25s 1",
       fadeInUp: "fade-in-up 1s ease-in-out 0.25s 1",
-      fadeInUpMenu: "fade-in-up-menu 1s ease-in-out 0.25s 1",
+      fadeInUpMenu: "fade-in-up-menu 0.50s ease-in-out 0s 1 forwards",
       fadeOutDown: "fade-out-down 1s ease-in-out 0.25s 1",
       fadeOutTopleft: "fade-out-top-left 1s ease-in-out 0.25s 1",
       fadeOutTopright: "fade-out-top-right 1s ease-in-out 0.25s 1",

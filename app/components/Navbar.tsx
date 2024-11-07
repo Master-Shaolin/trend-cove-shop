@@ -47,7 +47,12 @@ const Navbar = ({ isScrolling }: NavbarProps) => {
                     )}
                   </NavigationMenuTrigger>
                   {navItem.hasMenu ? (
-                    <NavigationMenuContent className="min-w-full absolute flex top-full bg-zinc-50 animate-fadeInUpMenu">
+                    <NavigationMenuContent
+                      className={`
+                        min-w-full absolute flex top-full bg-zinc-50 opacity-0 
+                        data-[state=open]:animate-fadeInUpMenu
+                      `}
+                    >
                       {navItem.menus?.map((menu, menuIndex) => (
                         <div
                           key={menuIndex}
@@ -69,11 +74,9 @@ const Navbar = ({ isScrolling }: NavbarProps) => {
                                     {sChild.title}
                                   </NavigationMenuLink>
                                 ))}
-                              {
-                                submenu.childs ? <hr />: ""
-                              }
+                              {submenu.childs ? <hr /> : ""}
                             </div>
-                          ))}                          
+                          ))}
                         </div>
                       ))}
                     </NavigationMenuContent>
