@@ -1,9 +1,8 @@
-
 interface CarouselHeroImageProps {
-  src: string
+  src: string;
 }
 
-const CarouselHeroImage = ({src}:CarouselHeroImageProps) => {
+const CarouselHeroImage = ({ src }: CarouselHeroImageProps) => {
   return (
     <div className="size-full px-1.5">
       <img

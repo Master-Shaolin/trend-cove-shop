@@ -1,4 +1,4 @@
-import { NavBarItem } from "@/types";
+import { IProductCardDetails, NavBarItem } from "@/types";
 
 const navBarItems: NavBarItem[] = [
   {
@@ -141,4 +141,32 @@ const navBarItems: NavBarItem[] = [
   },
 ];
 
-export { navBarItems };
+import product1 from "/public/images/Products/p-24-sm.png";
+import product2 from "/public/images/Products/p-27-sm.png";
+
+const flashSaleProducts: IProductCardDetails[] = [
+  {
+    url: product1.src,
+    title: "NIKE Shoes",
+    description:
+      "NIKE 2020 Black White is a clean and monochromatic colourway of the label’s latest high-technology silhouette. The model first launched late last year and is currently Jordan Brand’s flagship performance pair.",
+    price: 50.0,
+    oldPrice: 80.0,
+    soldQuantity: 180,
+    soldPercentage: 56,
+    available: 140,
+  },
+  {
+    url: product2.src,
+    title: "Wayfarer Sunglasses",
+    description:
+      "Our optical engineers developed these sunglasses for hiking. Ideal for occasional use in the mountains.",
+    price: 20.0,
+    oldPrice: 25.0,
+    soldQuantity: 120,
+    soldPercentage: 45,
+    available: 147,
+  },
+];
+
+export { flashSaleProducts, navBarItems };

@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import CarouselHero from "./CarouselHero";
 
 import ShineGradient from "@/components/ShineGradient";
+import CarouselFlashSale from "./CarouselFlashSale/CarouselFlashSale";
 import banner2 from "/public/images/banner-2.jpg";
 
 const DashboardPageView = () => {
@@ -48,6 +49,18 @@ const DashboardPageView = () => {
                 />
               </div>
               <ShineGradient />
+            </div>
+            <div className="flex flex-col border border-gray-300 rounded-lg pt-6 sm:pt-7 lg:pt-8 xl:pt-7 2xl:pt-9 px-4 md:px-5 lg:px-7 pb-6 lg:pb-7 xl:px-5 2xl:px-7 col-span-full xl:col-span-1 lg:mb-1 xl:mb-0">
+              <div className="flex items-center justify-between -mt-2 mb-4 md:mb-5 lg:mb-6 xl:mb-5 2xl:mb-6 3xl:mb-8">
+                <h3 className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl xl:leading-10 font-bold text-heading">
+                  Flash Sale
+                </h3>
+              </div>
+              <div className="h-full">
+                <div className="relative">
+                  <CarouselFlashSale />
+                </div>
+              </div>
             </div>
           </div>
         </div>

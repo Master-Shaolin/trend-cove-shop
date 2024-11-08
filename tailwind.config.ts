@@ -1243,6 +1243,16 @@ const config: Config = {
       flip: "flip 2s 0.25s 1",
       wiggle: "wiggle 0.8s ease 0.25s 2",
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      ipad: "810px",
+      lg: "1024px",
+      laptop: "1080px",
+      xl: "1280px",
+      "2xl": "1536px",
+      "3xl": "1920px",
+    },
   },
   plugins: [],
 };

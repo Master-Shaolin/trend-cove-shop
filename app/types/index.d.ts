@@ -22,3 +22,14 @@ export interface NavBarItemMenuChild {
   title: string;
   url: string;
 }
+
+export interface IProductCardDetails {
+  url: string;
+  title: string;
+  description: string;
+  price: number;
+  oldPrice: number;
+  soldQuantity: number;
+  soldPercentage: number;
+  available: number;
+}

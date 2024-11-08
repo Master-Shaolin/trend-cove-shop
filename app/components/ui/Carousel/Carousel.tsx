@@ -19,6 +19,7 @@ type CarouselProps = {
   plugins?: CarouselPlugin;
   orientation?: "horizontal" | "vertical";
   setApi?: (api: CarouselApi) => void;
+  hasScrollSnaps?: boolean;
 };
 
 type CarouselContextProps = {
@@ -54,6 +55,7 @@ const Carousel = React.forwardRef<
       plugins,
       className,
       children,
+      hasScrollSnaps = true,
       ...props
     },
     ref
@@ -153,17 +155,25 @@ const Carousel = React.forwardRef<
           {...props}
         >
           {children}
-          <div className="w-full h-8 absolute flex justify-center items-center gap-4 bottom-5">
-            {scrollSnaps.map((_, index) => (
-              <span
-                className={cn("block w-4 h-4 rounded-full bg-white cursor-pointer transition ease-in-out delay-100 duration-300 shadow-md",{
-                  "bg-black w-7 transition ease-in-out delay-100 duration-300": index === selectedIndex
-                })}
-                onClick={() => scrollTo(index)}
-                key={index}
-              ></span>
-            ))}
-          </div>
+          {hasScrollSnaps ? (
+            <div className="w-full h-8 absolute flex justify-center items-center gap-4 bottom-5">
+              {scrollSnaps.map((_, index) => (
+                <span
+                  className={cn(
+                    "block w-4 h-4 rounded-full bg-white cursor-pointer transition ease-in-out delay-100 duration-300 shadow-md",
+                    {
+                      "bg-black w-7 transition ease-in-out delay-100 duration-300":
+                        index === selectedIndex,
+                    }
+                  )}
+                  onClick={() => scrollTo(index)}
+                  key={index}
+                ></span>
+              ))}
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </CarouselContext.Provider>
     );
@@ -279,6 +289,5 @@ export {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-  type CarouselApi
+  type CarouselApi,
 };
-
