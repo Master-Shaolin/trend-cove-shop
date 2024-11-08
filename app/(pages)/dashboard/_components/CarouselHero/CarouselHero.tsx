@@ -7,6 +7,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
 
+
 import CarouselHeroImage from "./CarouselHeroImage";
 import mainSlider1 from "/public/images/main-slider-1.jpg";
 import mainSlider2 from "/public/images/main-slider-2.jpg";

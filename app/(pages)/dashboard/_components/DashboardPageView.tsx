@@ -2,15 +2,15 @@
 
 import Navbar from "@/components/Navbar";
 import { useEffect, useState } from "react";
-import CarouselHero from "./CarouselHero";
+import CarouselHero from "./CarouselHero/CarouselHero";
 
 import ShineGradient from "@/components/ShineGradient";
+import CarouselCollections from "./CarouselCollections/CarouselCollections";
 import CarouselFlashSale from "./CarouselFlashSale/CarouselFlashSale";
 import banner2 from "/public/images/banner-2.jpg";
 
 const DashboardPageView = () => {
   const [isScrolling, setIsScrolling] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onscroll = () => {
@@ -62,6 +62,9 @@ const DashboardPageView = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="mb-12 md:mb-12 lg:mb-14 pb-0.5 xl:pb-1.5">
+            <CarouselCollections />
           </div>
         </div>
       </main>

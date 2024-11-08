@@ -5,7 +5,6 @@ import { CSSProperties } from "react";
 
 
 const CarouselFlashCard = ({product} :{product: IProductCardDetails}) => {
-  console.log(product)
   return (
     <>
       <div className="w-full mb-5 sm:mb-7 lg:mb-8 2xl:mb-10 3xl:mb-12">
