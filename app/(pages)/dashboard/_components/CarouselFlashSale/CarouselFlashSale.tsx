@@ -2,20 +2,18 @@
 import {
   Carousel,
   CarouselContent,
+  CarouselItem,
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/Carousel/Carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
 
-//import CarouselHeroImage from "../CarouselHeroImage";
-//import mainSlider3 from "/public/images/Products/p-24-sm.png";
-//import mainSlider2 from "/public/images/Products/p-27-sm.png";
-//import mainSlider1 from "/public/images/Products/p-29-sm.png";
-import CarouselFlashCart from "./CarouselFlashCart";
+import { flashSaleProducts } from "@/mock/MockData";
+import CarouselFlashCard from "./CarouselFlashCard";
 
 const CarouselFlashSale = () => {
-  const plugin = useRef(Autoplay({ delay: 4000, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 3500, stopOnInteraction: true }));
   return (
     <Carousel
       opts={{
@@ -26,10 +24,16 @@ const CarouselFlashSale = () => {
       hasScrollSnaps={false}
     >
       <CarouselContent className="m-0 h-full">
-        <CarouselFlashCart />
+        { flashSaleProducts.map((product,index) => (
+          <CarouselItem key={index} className="flex flex-col justify-between h-full items-center pl-0">
+            <CarouselFlashCard product={product}/>
+          </CarouselItem>
+        ))
+
+        }
       </CarouselContent>
-      <CarouselPrevious className="bg-white -left-4" />
-      <CarouselNext className="bg-white -right-4" />
+      <CarouselPrevious className="bg-white top-1/3  -left-4" />
+      <CarouselNext className="bg-white  top-1/3 -right-4" />
     </Carousel>
   );
 };
