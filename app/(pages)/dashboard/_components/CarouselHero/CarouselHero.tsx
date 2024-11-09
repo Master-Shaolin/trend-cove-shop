@@ -14,7 +14,7 @@ import mainSlider2 from "/public/images/main-slider-2.jpg";
 import mainSlider3 from "/public/images/main-slider-3.jpg";
 
 const CarouselHero = () => {
-  const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 5500, stopOnInteraction: true }));
   return (
     <Carousel
       opts={{

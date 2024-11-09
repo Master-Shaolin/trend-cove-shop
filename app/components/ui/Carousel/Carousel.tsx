@@ -247,7 +247,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <IoIosArrowBack className="h-4 w-4" />
+      <IoIosArrowBack />
       <span className="sr-only">Previous slide</span>
     </Button>
   );
@@ -276,7 +276,7 @@ const CarouselNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <IoIosArrowForward className="h-4 w-4" />
+      <IoIosArrowForward />
       <span className="sr-only">Next slide</span>
     </Button>
   );
@@ -289,5 +289,6 @@ export {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-  type CarouselApi,
+  type CarouselApi
 };
+
