@@ -13,7 +13,7 @@ import { flashSaleProducts } from "@/mock/MockData";
 import CarouselFlashCard from "./CarouselFlashCard";
 
 const CarouselFlashSale = () => {
-  const plugin = useRef(Autoplay({ delay: 3500, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 4000, stopOnInteraction: true }));
   return (
     <Carousel
       opts={{

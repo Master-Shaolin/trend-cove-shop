@@ -3,8 +3,7 @@
 import { IProductCardDetails } from "@/types";
 import { CSSProperties } from "react";
 
-
-const CarouselFlashCard = ({product} :{product: IProductCardDetails}) => {
+const CarouselFlashCard = ({ product }: { product: IProductCardDetails }) => {
   return (
     <>
       <div className="w-full mb-5 sm:mb-7 lg:mb-8 2xl:mb-10 3xl:mb-12">
@@ -25,9 +24,7 @@ const CarouselFlashCard = ({product} :{product: IProductCardDetails}) => {
               <p className="text-gray-600 text-xs lg:text-sm leading-normal xl:leading-relaxed max-w-[250px] truncate">
                 {product.description}
               </p>
-              <div
-                className="font-semibold text-sm mt-1.5 flex flex-wrap gap-x-2 sm:text-xl md:text-base lg:text-xl md:mt-2.5 2xl:mt-3 text-heading"
-              >
+              <div className="font-semibold text-sm mt-1.5 flex flex-wrap gap-x-2 sm:text-xl md:text-base lg:text-xl md:mt-2.5 2xl:mt-3 text-heading">
                 <span className="inline-block false">${product.price}</span>
                 <del className="sm:text-base font-normal text-gray-800">
                   ${product.oldPrice}
@@ -47,7 +44,10 @@ const CarouselFlashCard = ({product} :{product: IProductCardDetails}) => {
           </div>
         </div>
         <div className="relative w-full h-2.5 lg:h-3 2xl:h-4 bg-gray-100 rounded-full overflow-hidden">
-          <div className={`absolute h-full bg-dark w-[--width]`} style={{'--width': `${product.soldPercentage}%`} as CSSProperties}></div>
+          <div
+            className={`absolute h-full bg-dark w-[--width]`}
+            style={{ "--width": `${product.soldPercentage}%` } as CSSProperties}
+          ></div>
         </div>
       </div>
     </>
