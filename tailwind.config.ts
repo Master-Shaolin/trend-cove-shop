@@ -8,11 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        product: "0 6px 12px rgba(0,0,0,.08)",
+      },
       colors: {
         dark: "rgb(var(--background-dark) / <alpha-value>)",
         linen: "hsl(var(--background-linen) / <alpha-value>)",
         "light-gray": "hsl(var(--background-light-gray) / <alpha-value>)",
         "dark-blue": "hsl(var(--color-dark-blue) / <alpha-value>)",
+        body: "hsl(var(--color-body) / <alpha-value>)",
       },
       keyframes: {
         "fade-in": {

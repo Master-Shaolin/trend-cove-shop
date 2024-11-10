@@ -12,7 +12,7 @@ const CarouselFlashCard = ({ product }: { product: IProductCardDetails }) => {
             <div className="size-full">
               <img
                 className="bg-gray-300 object-cover size-full rounded-md"
-                src={product.url}
+                src={`${process.env.NEXT_PUBLIC_STORAGE_URL}${product.url}`}
               />
             </div>
           </div>
@@ -26,7 +26,7 @@ const CarouselFlashCard = ({ product }: { product: IProductCardDetails }) => {
               </p>
               <div className="font-semibold text-sm mt-1.5 flex flex-wrap gap-x-2 sm:text-xl md:text-base lg:text-xl md:mt-2.5 2xl:mt-3 text-heading">
                 <span className="inline-block false">${product.price}</span>
-                <del className="sm:text-base font-normal text-gray-800">
+                <del className="sm:text-base font-normal text-gray-500">
                   ${product.oldPrice}
                 </del>
               </div>
