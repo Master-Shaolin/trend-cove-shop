@@ -10,6 +10,7 @@ import BestSellersSection from "./BestSellers/BestSellersSection";
 import CarouselCollections from "./CarouselCollections/CarouselCollections";
 import CarouselFlashSale from "./CarouselFlashSale/CarouselFlashSale";
 import CarouselShopCategory from "./CarouselShopCategory/CarouselShopCategory";
+import NewArrivalsSection from "./NewArrivals/NewArrivalsSection";
 import banner1 from "/public/images/banner-1.jpg";
 import banner2 from "/public/images/banner-2.jpg";
 
@@ -85,6 +86,7 @@ const DashboardPageView = () => {
               <img className="bg-gray-300 object-cover w-full rounded-md" src={banner1.src} />
             </Link>
           </div>
+          <NewArrivalsSection />
         </div>
       </main>
     </div>

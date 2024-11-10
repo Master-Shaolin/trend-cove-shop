@@ -291,4 +291,122 @@ const bestSellersProducts: IProductCardDetails[] = [
   },
 ];
 
-export { bestSellersProducts, flashSaleProducts, navBarItems };
+const newArrivalsProducts: IProductCardDetails[] = [
+  {
+    url: "/products/1-1p6fFwEHyVM89AXHuFDt85byU6Kxkk.jpg",
+    title: "Roadster Women Round Neck",
+    description:
+      "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
+    price: 18.59,
+    oldPrice: 0,
+    soldQuantity: 10,
+    soldPercentage: 10,
+    available: 100,
+  },
+  {
+    url: "/products/2-QsA6uL8qtep9Dqt4MhfxXTolGHZqn0.jpg",
+    title: "Roadster Women Round Neck",
+    description:
+      "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
+    price: 18.59,
+    oldPrice: 0,
+    soldQuantity: 10,
+    soldPercentage: 10,
+    available: 100,
+  },
+  {
+    url: "/products/3-NkBHJSVSkSPLhhI1oJnJh7ZAud0iRR.jpg",
+    title: "Roadster Women Round Neck",
+    description:
+      "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
+    price: 18.59,
+    oldPrice: 0,
+    soldQuantity: 10,
+    soldPercentage: 10,
+    available: 100,
+  },
+  {
+    url: "/products/4-bK0v4zo1wCES2UrUkS8TzdVQQwFMvd.jpg",
+    title: "Roadster Women Round Neck",
+    description:
+      "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
+    price: 18.59,
+    oldPrice: 0,
+    soldQuantity: 10,
+    soldPercentage: 10,
+    available: 100,
+  },
+  {
+    url: "/products/5-h0h9u7ZRXRRwS45Nkb2r8gXOwOdkcu.jpg",
+    title: "Roadster Women Round Neck",
+    description:
+      "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
+    price: 18.59,
+    oldPrice: 0,
+    soldQuantity: 10,
+    soldPercentage: 10,
+    available: 100,
+  },
+  {
+    url: "/products/6-67OpK9tnrOx8TSAfY4PFcTeaqbRgGm.jpg",
+    title: "Roadster Women Round Neck",
+    description:
+      "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
+    price: 18.59,
+    oldPrice: 0,
+    soldQuantity: 10,
+    soldPercentage: 10,
+    available: 100,
+  },
+  {
+    url: "/products/7-B6MUmPe44JM8BLx0FXb7ZtLzd4wet7.jpg",
+    title: "Roadster Women Round Neck",
+    description:
+      "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
+    price: 18.59,
+    oldPrice: 0,
+    soldQuantity: 10,
+    soldPercentage: 10,
+    available: 100,
+  },
+  {
+    url: "/products/8-RFGFXyY2FxR9G0imfAJtA8YkG8YRc9.jpg",
+    title: "Roadster Women Round Neck",
+    description:
+      "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
+    price: 18.59,
+    oldPrice: 0,
+    soldQuantity: 10,
+    soldPercentage: 10,
+    available: 100,
+  },
+  {
+    url: "/products/9-D3RMKNu1UWUH03P6Yb3TOkkMR39sWq.jpg",
+    title: "Roadster Women Round Neck",
+    description:
+      "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
+    price: 18.59,
+    oldPrice: 0,
+    soldQuantity: 10,
+    soldPercentage: 10,
+    available: 100,
+  },
+  {
+    url: "/products/10-hsr9tY7dW8m2HjcQtLbbVfaRw1pKYO.jpg",
+    title: "Roadster Women Round Neck",
+    description:
+      "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
+    price: 18.59,
+    oldPrice: 0,
+    soldQuantity: 10,
+    soldPercentage: 10,
+    available: 100,
+  },
+];
+
+export {
+  bestSellersProducts,
+  flashSaleProducts,
+  navBarItems,
+  newArrivalsProducts,
+};
