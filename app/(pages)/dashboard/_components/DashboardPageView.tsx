@@ -5,9 +5,12 @@ import { useEffect, useState } from "react";
 import CarouselHero from "./CarouselHero/CarouselHero";
 
 import ShineGradient from "@/components/ShineGradient";
+import Link from "next/link";
+import BestSellersSection from "./BestSellers/BestSellersSection";
 import CarouselCollections from "./CarouselCollections/CarouselCollections";
 import CarouselFlashSale from "./CarouselFlashSale/CarouselFlashSale";
 import CarouselShopCategory from "./CarouselShopCategory/CarouselShopCategory";
+import banner1 from "/public/images/banner-1.jpg";
 import banner2 from "/public/images/banner-2.jpg";
 
 const DashboardPageView = () => {
@@ -74,6 +77,13 @@ const DashboardPageView = () => {
               </h3>
             </div>
             <CarouselShopCategory />
+          </div>
+          <div className="border-t border-gray-300 mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0"></div>
+          <BestSellersSection />
+          <div className="mx-auto mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0">
+            <Link href={""} className="group flex justify-center relative overflow-hidden h-28 sm:h-auto">
+              <img className="bg-gray-300 object-cover w-full rounded-md" src={banner1.src} />
+            </Link>
           </div>
         </div>
       </main>

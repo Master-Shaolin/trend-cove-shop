@@ -8,6 +8,7 @@
   --background-linen: 27 69% 95%; /* #FBF1E9 */
 
   --color-dark-blue: 240 34.4% 12%; /* #141429 */
+  --color-body: 0 0% 35.3%; /* #5A5A5A  */
 }
 
 .menu-item-transition::after {
