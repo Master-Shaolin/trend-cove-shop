@@ -11,6 +11,7 @@ import CarouselCollections from "./CarouselCollections/CarouselCollections";
 import CarouselFlashSale from "./CarouselFlashSale/CarouselFlashSale";
 import CarouselShopCategory from "./CarouselShopCategory/CarouselShopCategory";
 import NewArrivalsSection from "./NewArrivals/NewArrivalsSection";
+import TopBrandsSection from "./TopBrands/TopBrandsSection";
 import banner1 from "/public/images/banner-1.jpg";
 import banner2 from "/public/images/banner-2.jpg";
 
@@ -87,6 +88,8 @@ const DashboardPageView = () => {
             </Link>
           </div>
           <NewArrivalsSection />
+          <div className="border-t border-gray-300 mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0"></div>
+          <TopBrandsSection />
         </div>
       </main>
     </div>
