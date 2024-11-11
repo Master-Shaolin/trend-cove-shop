@@ -11,8 +11,7 @@ const CarouselShopCategoryImage = ({ src }: IProps) => {
         className="bg-gray-300 object-cover size-full rounded-full"
         src={src}
       />
-      </div>
-      
+      </div>      
     </div>
   );
 };

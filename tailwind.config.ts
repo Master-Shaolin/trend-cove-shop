@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       boxShadow: {
         product: "0 6px 12px rgba(0,0,0,.08)",
+        navigation: "0 3px 6px rgba(0,0,0,.16)",
       },
       colors: {
         dark: "rgb(var(--background-dark) / <alpha-value>)",

@@ -143,7 +143,7 @@ const navBarItems: NavBarItem[] = [
 
 const flashSaleProducts: IProductCardDetails[] = [
   {
-    url: "/products/p-24-sm-2WHOqtA7lEf2aYTpDRD5bql1QWQNCF.png",
+    url: "/v1731353179/p-24-sm.webp",
     title: "NIKE Shoes",
     description:
       "NIKE 2020 Black White is a clean and monochromatic colourway of the label’s latest high-technology silhouette. The model first launched late last year and is currently Jordan Brand’s flagship performance pair.",
@@ -154,7 +154,7 @@ const flashSaleProducts: IProductCardDetails[] = [
     available: 140,
   },
   {
-    url: "/products/p-27-sm-S6vjZrKsq4T4a2AgPBvARQud7TABVl.png",
+    url: "/v1731353182/p-27-sm.webp",
     title: "Wayfarer Sunglasses",
     description:
       "Our optical engineers developed these sunglasses for hiking. Ideal for occasional use in the mountains.",
@@ -165,7 +165,7 @@ const flashSaleProducts: IProductCardDetails[] = [
     available: 147,
   },
   {
-    url: "/products/p-29-sm-XU04uHFoEL1BqEKNqUVRL775bvZDgY.png",
+    url: "/v1731353185/p-29-sm.webp",
     title: "REDQ Steel Watch",
     description:
       "The Black Bay celebrates 60 years of diving watches with extraordinary heritage. The iconic model inherits the general lines.",
@@ -179,7 +179,7 @@ const flashSaleProducts: IProductCardDetails[] = [
 
 const bestSellersProducts: IProductCardDetails[] = [
   {
-    url: "/products/p-1-RWoVJTXXdjVGrk8flWCpvbPBgqLN9g.png",
+    url: "/v1731353147/p-1.webp",
     title: "Nike Black",
     description:
       "Casual wear (casual attire or clothing) may be a Western code that’s relaxed, occasional, spontaneous and fitted to everyday use. Casual wear became popular within the Western world",
@@ -190,7 +190,7 @@ const bestSellersProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/p-2-LpzwF94CXrBDgQ15AR9UcY1rVFA25x.png",
+    url: "/v1731353149/p-2.webp",
     title: "Hermes  Carlton London",
     description:
       "Off-White self-striped knitted midi A-line dress, has a scoop neck, sleeveless, straight hem",
@@ -201,18 +201,18 @@ const bestSellersProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/p-8-8rleWtcjtDSwVQFoPMjQ3ajlXdwepv.png",
-    title: "Zara Shoes Green",
+    url: "/v1731353167/p-8.webp",
+    title: "Gucci Carlton UK",
     description:
-      "Footwear refers to garments worn on the feet, which originally serves to purpose of protection against adversities of the environment, usually regarding ground textures and temperature.",
-    price: 50.0,
-    oldPrice: 0.0,
+      "Knitted midi A-line dress, has a scoop neck, sleeveless, straight hem",
+    price: 14.99,
+    oldPrice: 19.99,
     soldQuantity: 10,
     soldPercentage: 10,
     available: 100,
   },
   {
-    url: "/products/p-4-LnfKuGSJI2S12x9WOzqpk22ppCEPVw.png",
+    url: "/v1731353155/p-4.webp",
     title: "Regular Fit Flannel Shirt",
     description:
       "The garments labelled as Committed are products that have been produced using sustainable fibers or processes, reducing their environmental impact. Mango's goal is to support the implementation of practices more committed to the environment.",
@@ -223,7 +223,7 @@ const bestSellersProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/p-5-20mLMbjRe5vn6HbTal8TwjM79nyy9f.png",
+    url: "/v1731353158/p-5.webp",
     title: "12 Eco-Friendly Clothing Brands That",
     description:
       "12 Eco-Friendly Clothing Brands That, has a scoop neck, sleeveless, straight hem",
@@ -234,7 +234,7 @@ const bestSellersProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/p-6-pTbT4in9YY8UjSXyznj3PsxN17FwdA.png",
+    url: "/v1731353161/p-6.webp",
     title: "Oversized W Sweater",
     description:
       "Constructed in cotton sweat fabric, this lovely piece, lacus eu mattis auctor, dolor lectus venenatis nulla, at tristique eros sem vel ante. Sed leo enim, iaculis ornare tristique non, vulputate sit amet ante.",
@@ -245,7 +245,7 @@ const bestSellersProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/p-7-iT7PJ8ZQS74IytBohMsyruHNPB99FL.png",
+    url: "/v1731353164/p-7.webp",
     title: "Regular Fit Crew-neck T-shirt",
     description:
       "Self-striped knitted midi A-line dress, has a scoop neck, T-shirt, straight hem",
@@ -256,19 +256,18 @@ const bestSellersProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/p-3-k2v25ziCDGcJqBXjFUmfXWU2ud2WrJ.png",
-    title: "Gucci Carlton UK",
+    url: "/v1731353152/p-3.webp",
+    title: "Zara Shoes Green",
     description:
-      "Knitted midi A-line dress, has a scoop neck, sleeveless, straight hem",
-    price: 14.99,
-    oldPrice: 19.99,
+      "Footwear refers to garments worn on the feet, which originally serves to purpose of protection against adversities of the environment, usually regarding ground textures and temperature.",
+    price: 50.0,
+    oldPrice: 0.0,
     soldQuantity: 10,
     soldPercentage: 10,
     available: 100,
   },
-
   {
-    url: "/products/p-9-FUM6BZ4j9C3lM2miku2j6Sa1FqOlUa.png",
+    url: "/v1731353169/p-9.webp",
     title: "Women Fitted Neck T-Shirt",
     description:
       "All about the crisp cut and exceptional quality of the cotton, the Women Fitted V Neck Rib L/S T-Shirt won’t be one you’ll be tossing away ever.",
@@ -279,7 +278,7 @@ const bestSellersProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/p-10-km3yUXQNJC3izEQajOnW68pw0jCvVO.png",
+    url: "/v1731353172/p-10.webp",
     title: "NIKE Shoes",
     description:
       "NIKE 2020 Black White is a clean and monochromatic colourway of the label’s latest high-technology silhouette. The model first launched late last year and is currently Jordan Brand’s flagship performance pair.",
@@ -293,7 +292,7 @@ const bestSellersProducts: IProductCardDetails[] = [
 
 const newArrivalsProducts: IProductCardDetails[] = [
   {
-    url: "/products/1-1p6fFwEHyVM89AXHuFDt85byU6Kxkk.jpg",
+    url: "/v1731353910/1.webp",
     title: "Roadster Women Round Neck",
     description:
       "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
@@ -304,7 +303,7 @@ const newArrivalsProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/2-QsA6uL8qtep9Dqt4MhfxXTolGHZqn0.jpg",
+    url: "/v1731353913/2.webp",
     title: "Roadster Women Round Neck",
     description:
       "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
@@ -315,7 +314,7 @@ const newArrivalsProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/3-NkBHJSVSkSPLhhI1oJnJh7ZAud0iRR.jpg",
+    url: "/v1731353917/3.webp",
     title: "Roadster Women Round Neck",
     description:
       "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
@@ -326,7 +325,7 @@ const newArrivalsProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/4-bK0v4zo1wCES2UrUkS8TzdVQQwFMvd.jpg",
+    url: "/v1731353920/4.webp",
     title: "Roadster Women Round Neck",
     description:
       "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
@@ -337,7 +336,7 @@ const newArrivalsProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/5-h0h9u7ZRXRRwS45Nkb2r8gXOwOdkcu.jpg",
+    url: "/v1731353923/5.webp",
     title: "Roadster Women Round Neck",
     description:
       "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
@@ -348,7 +347,7 @@ const newArrivalsProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/6-67OpK9tnrOx8TSAfY4PFcTeaqbRgGm.jpg",
+    url: "/v1731353927/6.webp",
     title: "Roadster Women Round Neck",
     description:
       "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
@@ -359,7 +358,7 @@ const newArrivalsProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/7-B6MUmPe44JM8BLx0FXb7ZtLzd4wet7.jpg",
+    url: "/v1731353931/7.webp",
     title: "Roadster Women Round Neck",
     description:
       "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
@@ -370,7 +369,7 @@ const newArrivalsProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/8-RFGFXyY2FxR9G0imfAJtA8YkG8YRc9.jpg",
+    url: "/v1731353934/8.webp",
     title: "Roadster Women Round Neck",
     description:
       "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
@@ -381,7 +380,7 @@ const newArrivalsProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/9-D3RMKNu1UWUH03P6Yb3TOkkMR39sWq.jpg",
+    url: "/v1731353938/9.webp",
     title: "Roadster Women Round Neck",
     description:
       "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
@@ -392,7 +391,7 @@ const newArrivalsProducts: IProductCardDetails[] = [
     available: 100,
   },
   {
-    url: "/products/10-hsr9tY7dW8m2HjcQtLbbVfaRw1pKYO.jpg",
+    url: "/v1731353941/10.webp",
     title: "Roadster Women Round Neck",
     description:
       "Fendi began life in 1925 as a fur and leather speciality store in Rome.",
@@ -404,8 +403,76 @@ const newArrivalsProducts: IProductCardDetails[] = [
   },
 ];
 
+const brands = [
+  {
+    name: "Hunter Shoes",
+    url: "/v1731353092/hunter-shoes.webp",
+  },
+  {
+    name: "Club Shoes",
+    url: "/v1731353080/club-shoes.webp",
+  },
+  {
+    name: "Hoppister",
+    url: "/v1731353090/hoppister.webp",
+  },
+  {
+    name: "Blaze Fashion",
+    url: "/v1731353078/blaze-fashion.webp",
+  },
+  {
+    name: "Elegance",
+    url: "/v1731353082/elegance.webp",
+  },
+  {
+    name: "Fashadil",
+    url: "/v1731353085/fashadil.webp",
+  },
+  {
+    name: "Shovia",
+    url: "/v1731353095/shovia.webp",
+  },
+  {
+    name: "Fusion",
+    url: "/v1731353087/fusion.webp",
+  },
+  {
+    name: "Hunter Shoes",
+    url: "/v1731353092/hunter-shoes.webp",
+  },
+  {
+    name: "Club Shoes",
+    url: "/v1731353080/club-shoes.webp",
+  },
+  {
+    name: "Hoppister",
+    url: "/v1731353090/hoppister.webp",
+  },
+  {
+    name: "Blaze Fashion",
+    url: "/v1731353078/blaze-fashion.webp",
+  },
+  {
+    name: "Elegance",
+    url: "/v1731353082/elegance.webp",
+  },
+  {
+    name: "Fashadil",
+    url: "/v1731353085/fashadil.webp",
+  },
+  {
+    name: "Shovia",
+    url: "/v1731353095/shovia.webp",
+  },
+  {
+    name: "Fusion",
+    url: "/v1731353087/fusion.webp",
+  },
+];
+
 export {
   bestSellersProducts,
+  brands,
   flashSaleProducts,
   navBarItems,
   newArrivalsProducts,
