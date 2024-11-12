@@ -470,9 +470,77 @@ const brands = [
   },
 ];
 
+const categories = [
+  {
+    name: "Woman",
+    url: "/v1731352837/woman.webp",
+  },
+  {
+    name: "Man",
+    url: "/v1731352830/man.webp",
+  },
+  {
+    name: "Watch",
+    url: "/v1731352836/watch.webp",
+  },
+  {
+    name: "Kids",
+    url: "/v1731352828/kid.webp",
+  },
+  {
+    name: "Sports",
+    url: "/v1731352833/sports.webp",
+  },
+  {
+    name: "Sunglass",
+    url: "/v1731352834/sunglass.webp",
+  },
+  {
+    name: "Bags",
+    url: "/v1731352827/bags.webp",
+  },
+  {
+    name: "Sneakers",
+    url: "/v1731352831/sneakers.webp",
+  },
+  {
+    name: "Woman",
+    url: "/v1731352837/woman.webp",
+  },
+  {
+    name: "Man",
+    url: "/v1731352830/man.webp",
+  },
+  {
+    name: "Watch",
+    url: "/v1731352836/watch.webp",
+  },
+  {
+    name: "Kids",
+    url: "/v1731352828/kid.webp",
+  },
+  {
+    name: "Sports",
+    url: "/v1731352833/sports.webp",
+  },
+  {
+    name: "Sunglass",
+    url: "/v1731352834/sunglass.webp",
+  },
+  {
+    name: "Bags",
+    url: "/v1731352827/bags.webp",
+  },
+  {
+    name: "Sneakers",
+    url: "/v1731352831/sneakers.webp",
+  },
+];
+
 export {
   bestSellersProducts,
   brands,
+  categories,
   flashSaleProducts,
   navBarItems,
   newArrivalsProducts,
