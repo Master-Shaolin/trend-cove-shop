@@ -10,8 +10,8 @@ import BestSellersSection from "./BestSellers/BestSellersSection";
 import CarouselCollections from "./CarouselCollections/CarouselCollections";
 import CarouselFlashSale from "./CarouselFlashSale/CarouselFlashSale";
 import CarouselShopCategory from "./CarouselShopCategory/CarouselShopCategory";
-import MoreCollectionsSection from "./MoreCollections/MoreCollectionsSection";
 import NewArrivalsSection from "./NewArrivals/NewArrivalsSection";
+import OtherNewsSection from "./OtherNews/OtherNewsSection";
 import TopBrandsSection from "./TopBrands/TopBrandsSection";
 import banner1 from "/public/images/banner-1.jpg";
 import banner2 from "/public/images/banner-2.jpg";
@@ -91,7 +91,7 @@ const DashboardPageView = () => {
           <NewArrivalsSection />
           <div className="border-t border-gray-300 mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0"></div>
           <TopBrandsSection />
-          <MoreCollectionsSection />
+          <OtherNewsSection />
         </div>
       </main>
     </div>

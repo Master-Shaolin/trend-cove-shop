@@ -537,6 +537,30 @@ const categories = [
   },
 ];
 
+const otherNews = [
+  {
+    url: "",
+    img: "/v1731461938/spring-knits_crgoxy.webp",
+    title: "New Spring Knits",
+    description:
+      "Endlessly versatile new styles that say yes to spring. The season’s looking bright.",
+  },
+  {
+    url: "",
+    img: "/v1731461939/down-to-core_amam58.webp",
+    title: "Down To The Core",
+    description:
+      "Endlessly versatile new styles that say yes to spring. The season’s looking bright.",
+  },
+  {
+    url: "",
+    img: "/v1731461938/winter-knits_qj1vpw.webp",
+    title: "New Winter Knits",
+    description:
+      "Endlessly versatile new styles that say yes to spring. The season’s looking bright.",
+  },
+];
+
 export {
   bestSellersProducts,
   brands,
@@ -544,4 +568,5 @@ export {
   flashSaleProducts,
   navBarItems,
   newArrivalsProducts,
+  otherNews,
 };

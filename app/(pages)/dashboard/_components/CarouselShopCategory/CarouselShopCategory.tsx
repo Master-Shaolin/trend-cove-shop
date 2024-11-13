@@ -23,8 +23,8 @@ const CarouselShopCategory = () => {
     >
       <CarouselContent className="m-0 h-full gap-[2px] -ml-[230px]">
         { categories.map((category,index) => (
-          <CarouselItem className="flex justify-center items-center basis-1/8 p-0 mr-12">
-            <CarouselShopCategoryImage key={index} src={`${process.env.NEXT_PUBLIC_STORAGE_URL}${category.url}`} name={category.name}/>
+          <CarouselItem key={index} className="flex justify-center items-center basis-1/8 p-0 mr-12">
+            <CarouselShopCategoryImage src={`${process.env.NEXT_PUBLIC_STORAGE_URL}${category.url}`} name={category.name}/>
           </CarouselItem>
         ))
 
