@@ -7,6 +7,9 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      body: ['"Open Sans"'],
+    },
     extend: {
       boxShadow: {
         product: "0 6px 12px rgba(0,0,0,.08)",
