@@ -15,7 +15,7 @@ const ProductCard = ({ product }: { product: IProductCardDetails }) => {
         <h2 className="truncate mb-1 text-sm md:text-base font-semibold text-heading">
           {product.title}
         </h2>
-        <p className="text-body text-xs lg:text-sm leading-normal xl:leading-relaxed max-w-[250px] truncate">
+        <p className="text-body text-xs lg:text-[15px] leading-normal xl:leading-relaxed max-w-[250px] truncate">
           {product.description}
         </p>
         <div
