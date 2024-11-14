@@ -6,6 +6,7 @@ import CarouselHero from "./CarouselHero/CarouselHero";
 
 import ShineGradient from "@/components/ShineGradient";
 import Link from "next/link";
+import BenefitsSection from "./BenefitsSection";
 import BestSellersSection from "./BestSellers/BestSellersSection";
 import CarouselCollections from "./CarouselCollections/CarouselCollections";
 import CarouselFlashSale from "./CarouselFlashSale/CarouselFlashSale";
@@ -92,6 +93,7 @@ const DashboardPageView = () => {
           <div className="border-t border-gray-300 mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0"></div>
           <TopBrandsSection />
           <OtherNewsSection />
+          <BenefitsSection />
         </div>
       </main>
     </div>

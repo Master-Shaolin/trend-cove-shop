@@ -17,7 +17,7 @@ const OtherNewsSection = () => {
               <h3 className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl xl:leading-10 font-bold text-heading mb-1.5 lg:mb-2.5 2xl:mb-3 3xl:mb-3.5">
                 {oNew.title}
               </h3>
-              <p className="text-body text-[13px] md:text-sm leading-6 md:leading-7 xl:px-10 3xl:px-20">
+              <p className="text-body text-sm lg:text-[15px] leading-6 md:leading-7 xl:px-10 3xl:px-20">
                 {oNew.description}
               </p>
             </CardHeader>
@@ -42,7 +42,7 @@ const OtherNewsSection = () => {
               <h3 className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl xl:leading-10 font-bold text-heading mb-1.5 lg:mb-2.5 2xl:mb-3 3xl:mb-3.5">
                 {oNew.title}
               </h3>
-              <p className="text-body text-[13px] md:text-sm leading-6 md:leading-7 xl:px-10 3xl:px-20">
+              <p className="text-body text-sm lg:text-[15px] leading-6 md:leading-7 xl:px-10 3xl:px-20">
                 {oNew.description}
               </p>
             </CardFooter>

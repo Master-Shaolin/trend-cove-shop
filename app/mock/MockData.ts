@@ -561,7 +561,35 @@ const otherNews = [
   },
 ];
 
+const benefits = [
+  {
+    img: "/v1731542449/saving_b0hyqz.svg",
+    title: "Guaranteed Savings",
+    description:
+      "If you don’t make your membership fee in savings, we’ll refund the difference",
+  },
+  {
+    img: "/v1731542450/risk-free_ocxwxi.svg",
+    title: "Try it risk-free",
+    description:
+      "If you don’t make your membership fee in savings, we’ll refund the difference",
+  },
+  {
+    img: "/v1731542449/delivery_dddu3g.svg",
+    title: "Super Fast Delivery",
+    description:
+      "If you don’t make your membership fee in savings, we’ll refund the difference",
+  },
+  {
+    img: "/v1731542450/product_yqyalu.svg",
+    title: "1000+ products priced at cost",
+    description:
+      "If you don’t make your membership fee in savings, we’ll refund the difference",
+  },
+];
+
 export {
+  benefits,
   bestSellersProducts,
   brands,
   categories,
