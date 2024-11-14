@@ -12,6 +12,7 @@ import CarouselCollections from "./CarouselCollections/CarouselCollections";
 import CarouselFlashSale from "./CarouselFlashSale/CarouselFlashSale";
 import CarouselShopCategory from "./CarouselShopCategory/CarouselShopCategory";
 import NewArrivalsSection from "./NewArrivals/NewArrivalsSection";
+import NewsLetterSection from "./NewsLetter/NewsLetterSection";
 import OtherNewsSection from "./OtherNews/OtherNewsSection";
 import TopBrandsSection from "./TopBrands/TopBrandsSection";
 import banner1 from "/public/images/banner-1.jpg";
@@ -94,6 +95,7 @@ const DashboardPageView = () => {
           <TopBrandsSection />
           <OtherNewsSection />
           <BenefitsSection />
+          <NewsLetterSection />
         </div>
       </main>
     </div>
