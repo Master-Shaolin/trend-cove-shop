@@ -1,4 +1,4 @@
-import { IProductCardDetails, NavBarItem } from "@/types";
+import { FooterItem, IProductCardDetails, NavBarItem } from "@/types";
 
 const navBarItems: NavBarItem[] = [
   {
@@ -585,6 +585,34 @@ const benefits = [
     title: "1000+ products priced at cost",
     description:
       "If you don’t make your membership fee in savings, we’ll refund the difference",
+  },
+];
+
+const footerItems: FooterItem[] = [
+  {
+    title: "Social",
+    childs: [
+      {
+        title: "",
+        url: "",
+        icon: undefined,
+      },
+      {
+        title: "",
+        url: "",
+        icon: undefined,
+      },
+      {
+        title: "",
+        url: "",
+        icon: undefined,
+      },
+      {
+        title: "",
+        url: "",
+        icon: undefined,
+      },
+    ],
   },
 ];
 
