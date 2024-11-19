@@ -33,3 +33,14 @@ export interface IProductCardDetails {
   soldPercentage: number;
   available: number;
 }
+
+export interface FooterItem {
+  title: string;
+  childs: FooterItemChild[];
+}
+
+export interface FooterItemChild {
+  title: string;
+  url: string;
+  icon?: string;
+}

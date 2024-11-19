@@ -1,4 +1,4 @@
-import { IProductCardDetails, NavBarItem } from "@/types";
+import { FooterItem, IProductCardDetails, NavBarItem } from "@/types";
 
 const navBarItems: NavBarItem[] = [
   {
@@ -588,13 +588,211 @@ const benefits = [
   },
 ];
 
+const footerItems: FooterItem[] = [
+  {
+    title: "Social",
+    childs: [
+      {
+        title: "Instagram",
+        url: "https://www.instagram.com",
+        icon: "instagram",
+      },
+      {
+        title: "X",
+        url: "https://x.com",
+        icon: "x",
+      },
+      {
+        title: "Facebook",
+        url: "https://www.facebook.com/",
+        icon: "facebook",
+      },
+      {
+        title: "Youtube",
+        url: "https://www.youtube.com/",
+        icon: "youtube",
+      },
+    ],
+  },
+  {
+    title: "Contact",
+    childs: [
+      {
+        title: "Contact Us",
+        url: "/",
+        icon: undefined,
+      },
+      {
+        title: "yourexample@email.com",
+        url: "/",
+        icon: undefined,
+      },
+      {
+        title: "example@email.com",
+        url: "/",
+        icon: undefined,
+      },
+      {
+        title: "Call us: +1 254 568-5479",
+        url: "/",
+        icon: undefined,
+      },
+    ],
+  },
+  {
+    title: "About",
+    childs: [
+      {
+        title: "Support Center",
+        url: "/",
+        icon: undefined,
+      },
+      {
+        title: "Customer Support",
+        url: "/",
+        icon: undefined,
+      },
+      {
+        title: "About Us",
+        url: "/",
+        icon: undefined,
+      },
+      {
+        title: "Copyright",
+        url: "/",
+        icon: undefined,
+      },
+    ],
+  },
+  {
+    title: "Customer Care",
+    childs: [
+      {
+        title: "FAQ & Helps",
+        url: "/",
+        icon: undefined,
+      },
+      {
+        title: "Shipping & Delivery",
+        url: "/",
+        icon: undefined,
+      },
+      {
+        title: "Return & Exchanges",
+        url: "/",
+        icon: undefined,
+      },
+    ],
+  },
+  {
+    title: "Our Information",
+    childs: [
+      {
+        title: "Privacy policy update",
+        url: "/",
+        icon: undefined,
+      },
+      {
+        title: "Terms & conditions",
+        url: "/",
+        icon: undefined,
+      },
+      {
+        title: "Return Policy",
+        url: "/",
+        icon: undefined,
+      },
+      {
+        title: "Site Map",
+        url: "/",
+        icon: undefined,
+      },
+    ],
+  },
+  {
+    title: "Top Categories",
+    childs: [
+      {
+        title: "Men's Wear",
+        url: "/",
+        icon: undefined,
+      },
+      {
+        title: "Men's Wear",
+        url: "/",
+        icon: undefined,
+      },
+      {
+        title: "Kid's Wear",
+        url: "/",
+        icon: undefined,
+      },
+      {
+        title: "Sports Wear",
+        url: "/",
+        icon: undefined,
+      },
+    ],
+  },
+];
+
+const paymentMethods = [
+  {
+    title: "Master Card",
+    url: "/",
+    image: {
+      src: "/images/payment methods/mastercard.svg",
+      width: 34,
+      height: 20,
+    },
+  },
+  {
+    title: "Visa",
+    url: "/",
+    image: {
+      src: "/images/payment methods/visa.svg",
+      width: 50,
+      height: 20,
+    },
+  },
+  {
+    title: "Paypal",
+    url: "/",
+    image: {
+      src: "/images/payment methods/paypal.svg",
+      width: 76,
+      height: 20,
+    },
+  },
+  {
+    title: "JCB",
+    url: "/",
+    image: {
+      src: "/images/payment methods/jcb.svg",
+      width: 26,
+      height: 20,
+    },
+  },
+  {
+    title: "Skrill",
+    url: "/",
+    image: {
+      src: "/images/payment methods/skrill.svg",
+      width: 39,
+      height: 20,
+    },
+  },
+];
+
 export {
   benefits,
   bestSellersProducts,
   brands,
   categories,
   flashSaleProducts,
+  footerItems,
   navBarItems,
   newArrivalsProducts,
   otherNews,
+  paymentMethods,
 };

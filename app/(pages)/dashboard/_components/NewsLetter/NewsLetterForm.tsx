@@ -49,7 +49,7 @@ const NewsLetterForm = () => {
               <FormItem className="w-full">
                 <FormControl>
                   <Input
-                    className="py-2 px-4 md:px-5 w-full appearance-none border text-input text-sm lg:text-[15px] font-body placeholder-body min-h-12 transition duration-200 ease-in-out border-gray-300 focus:outline-none focus:border-dark md:h-12 lg:px-7 h-12 lg:h-14 text-center ltr:sm:text-left rtl:sm:text-right bg-white rounded-md"
+                    className="py-2 px-4 md:px-5 w-full appearance-none border text-input text-sm lg:text-[15px] font-body placeholder-body min-h-12 transition duration-200 ease-in-out border-gray-300 focus:outline-none focus:border-dark md:h-12 lg:px-7 h-12 lg:h-14 ltr:sm:text-left rtl:sm:text-right bg-white rounded-md"
                     placeholder="Write your email here"
                     {...field}
                   />

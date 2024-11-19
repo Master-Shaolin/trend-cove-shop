@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import { useEffect, useState } from "react";
 import CarouselHero from "./CarouselHero/CarouselHero";
 
+import Footer from "@/components/Footer";
 import ShineGradient from "@/components/ShineGradient";
 import Link from "next/link";
 import BenefitsSection from "./BenefitsSection";
@@ -86,8 +87,14 @@ const DashboardPageView = () => {
           <div className="border-t border-gray-300 mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0"></div>
           <BestSellersSection />
           <div className="mx-auto mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0">
-            <Link href={""} className="group flex justify-center relative overflow-hidden h-28 sm:h-auto">
-              <img className="bg-gray-300 object-cover w-full rounded-md" src={banner1.src} />
+            <Link
+              href={""}
+              className="group flex justify-center relative overflow-hidden h-28 sm:h-auto"
+            >
+              <img
+                className="bg-gray-300 object-cover w-full rounded-md"
+                src={banner1.src}
+              />
             </Link>
           </div>
           <NewArrivalsSection />
@@ -98,6 +105,7 @@ const DashboardPageView = () => {
           <NewsLetterSection />
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
