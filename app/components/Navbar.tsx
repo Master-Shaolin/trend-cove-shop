@@ -38,7 +38,7 @@ const Navbar = ({ isScrolling }: NavbarProps) => {
                   key={navIndex}
                   className="h-full relative group cursor-pointer py-0 after:content-[''] after:w-0 after:absolute after:bottom-0 after:left-full after:h-1 after:bg-black menu-item-transition hover:after:w-full hover:after:left-0"
                 >
-                  <NavigationMenuTrigger className="h-full group inline-flex items-center px-3 py-2 gap-1 text-gray-700 text-sm font-normal xl:text-base text-heading xl:px-4 hover:text-black">
+                  <NavigationMenuTrigger className="h-full group inline-flex items-center px-3 py-2 gap-1 text-gray-700 text-sm font-normal xl:text-base xl:px-4 hover:text-black">
                     {navItem.title}
                     {navItem.hasMenu ? (
                       <IoIosArrowDown className="text-gray-400 w-4 h-4 mt-1 transition duration-300 ease-in-out group group-hover:-rotate-180" />
@@ -60,7 +60,7 @@ const Navbar = ({ isScrolling }: NavbarProps) => {
                         >
                           {menu.submenus.map((submenu, sIndex) => (
                             <div key={sIndex}>
-                              <NavigationMenuLink className="flex items-center py-2 ltr:pl-5 rtl:pr-5 ltr:xl:pl-7 rtl:xl:pr-7 ltr:pr-3 rtl:pl-3 ltr:xl:pr-3.5 rtl:xl:pl-3.5 hover:text-heading hover:bg-gray-300">
+                              <NavigationMenuLink className="flex items-center py-2 ltr:pl-5 rtl:pr-5 ltr:xl:pl-7 rtl:xl:pr-7 ltr:pr-3 rtl:pl-3 ltr:xl:pr-3.5 rtl:xl:pl-3.5 hover:text-dark hover:bg-gray-300">
                                 <span className="text-dark font-semibold">
                                   {submenu.title}
                                 </span>
@@ -69,7 +69,7 @@ const Navbar = ({ isScrolling }: NavbarProps) => {
                                 submenu.childs.map((sChild, sChildIndex) => (
                                   <NavigationMenuLink
                                     key={sChildIndex}
-                                    className="flex items-center py-2 ltr:pl-5 rtl:pr-5 ltr:xl:pl-7 rtl:xl:pr-7 ltr:pr-3 rtl:pl-3 ltr:xl:pr-3.5 rtl:xl:pl-3.5 hover:text-heading hover:bg-gray-300"
+                                    className="flex items-center py-2 ltr:pl-5 rtl:pr-5 ltr:xl:pl-7 rtl:xl:pr-7 ltr:pr-3 rtl:pl-3 ltr:xl:pr-3.5 rtl:xl:pl-3.5 hover:text-dark hover:bg-gray-300"
                                   >
                                     {sChild.title}
                                   </NavigationMenuLink>
@@ -100,7 +100,7 @@ const Navbar = ({ isScrolling }: NavbarProps) => {
             <Button
               variant={"text"}
               size="text"
-              className="text-sm font-semibold xl:text-base text-heading"
+              className="text-sm font-semibold xl:text-base text-dark"
             >
               Sing in
             </Button>

@@ -12,7 +12,7 @@ const ProductCard = ({ product }: { product: IProductCardDetails }) => {
         />
       </div>
       <div className="w-full overflow-hidden p-2 md:px-2.5 xl:px-4">
-        <h2 className="truncate mb-1 text-sm md:text-base font-semibold text-heading">
+        <h2 className="truncate mb-1 text-sm md:text-base font-semibold text-dark">
           {product.title}
         </h2>
         <p className="text-body text-xs lg:text-[15px] leading-normal xl:leading-relaxed max-w-[250px] truncate">
@@ -20,7 +20,7 @@ const ProductCard = ({ product }: { product: IProductCardDetails }) => {
         </p>
         <div
           className="font-semibold text-sm sm:text-base mt-1.5 flex flex-wrap gap-x-2 lg:text-lg lg:mt-2.5
-           text-heading"
+           text-dark"
         >
           <span className="inline-block false">${product.price}</span>
           { product.oldPrice > 0 ?

@@ -16,7 +16,7 @@ const BenefitsSection = () => {
             />
           </div>
           <div className="-mb-1">
-            <h3 className="text-heading text-lg md:text-xl font-semibold mb-1.5 md:mb-2">
+            <h3 className="text-dark text-lg md:text-xl font-semibold mb-1.5 md:mb-2">
               {benefit.title}
             </h3>
             <p className="text-body text-[15px] leading-6 md:leading-7">

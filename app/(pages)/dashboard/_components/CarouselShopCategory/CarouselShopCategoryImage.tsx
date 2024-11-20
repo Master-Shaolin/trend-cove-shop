@@ -20,7 +20,7 @@ const CarouselShopCategoryImage = ({ src, name }: IProps) => {
           <PiLinkBold className="text-white text-base sm:text-xl lg:text-2xl xl:text-3xl transform opacity-0 scale-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100" />
         </div>
       </div>
-      <h4 className="text-heading text-sm md:text-base xl:text-lg font-semibold capitalize">{name}</h4>
+      <h4 className="text-dark text-sm md:text-base xl:text-lg font-semibold capitalize">{name}</h4>
     </Link>
   );
 };

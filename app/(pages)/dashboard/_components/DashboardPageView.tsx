@@ -6,6 +6,7 @@ import CarouselHero from "./CarouselHero/CarouselHero";
 
 import Footer from "@/components/Footer";
 import ShineGradient from "@/components/ShineGradient";
+import NiceModal from "@ebay/nice-modal-react";
 import Link from "next/link";
 import BenefitsSection from "./BenefitsSection";
 import BestSellersSection from "./BestSellers/BestSellersSection";
@@ -15,6 +16,7 @@ import CarouselShopCategory from "./CarouselShopCategory/CarouselShopCategory";
 import NewArrivalsSection from "./NewArrivals/NewArrivalsSection";
 import NewsLetterSection from "./NewsLetter/NewsLetterSection";
 import OtherNewsSection from "./OtherNews/OtherNewsSection";
+import { SubscribeModal } from "./SubscribeModal";
 import TopBrandsSection from "./TopBrands/TopBrandsSection";
 import banner1 from "/public/images/banner-1.jpg";
 import banner2 from "/public/images/banner-2.jpg";
@@ -23,6 +25,10 @@ const DashboardPageView = () => {
   const [isScrolling, setIsScrolling] = useState(false);
 
   useEffect(() => {
+    setTimeout(() => {
+      handleSubscribeModal()
+    }, 2000);
+
     const onscroll = () => {
       setIsScrolling(true);
       const scrolledTo = window.scrollY + window.innerHeight;
@@ -39,6 +45,10 @@ const DashboardPageView = () => {
       };
     }
   }, []);
+
+  const handleSubscribeModal = () => {
+    NiceModal.show(SubscribeModal);
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -62,7 +72,7 @@ const DashboardPageView = () => {
             </div>
             <div className="flex flex-col border border-gray-300 rounded-lg pt-6 sm:pt-7 lg:pt-8 xl:pt-7 2xl:pt-9 px-4 md:px-5 lg:px-7 pb-6 lg:pb-7 xl:px-5 2xl:px-7 col-span-full xl:col-span-1 lg:mb-1 xl:mb-0">
               <div className="flex items-center justify-between -mt-2 mb-4 md:mb-5 lg:mb-6 xl:mb-5 2xl:mb-6 3xl:mb-8">
-                <h3 className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl xl:leading-10 font-bold text-heading">
+                <h3 className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl xl:leading-10 font-bold text-dark">
                   Flash Sale
                 </h3>
               </div>
@@ -78,7 +88,7 @@ const DashboardPageView = () => {
           </div>
           <div className="mb-10 md:mb-11 lg:mb-12 xl:mb-14 lg:pb-1 xl:pb-0">
             <div className="flex items-center justify-between -mt-2 pb-0.5 mb-4 md:mb-5 lg:mb-6 2xl:mb-7 3xl:mb-8">
-              <h3 className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl xl:leading-10 font-bold text-heading">
+              <h3 className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl xl:leading-10 font-bold text-dark">
                 Shop By Category
               </h3>
             </div>
