@@ -2,6 +2,7 @@
 
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogHeader,
@@ -23,6 +24,7 @@ import {
 } from "@/components/Form";
 import { Button } from "@/components/ui/Button/Button";
 import { Input } from "@/components/ui/Input";
+import { IoIosClose } from "react-icons/io";
 
 const formSchema = z.object({
   email: z
@@ -54,11 +56,17 @@ export const SubscribeModal = NiceModal.create(() => {
 
   return (
     <Dialog open={modal.visible} onOpenChange={handleModalOpen}>
-      <DialogContent className="w-full p-0 border-0 sm:w-[450px] md:w-[550px] lg:w-[980px] xl:w-[1170px] flex flex-col max-w-full max-h-ful overflow-hidden rounded-md opacity-0 data-[state=open]:animate-fadeInForwards">
-        <DialogHeader className="hidden">
-          <DialogTitle></DialogTitle>
-          <DialogDescription></DialogDescription>
-        </DialogHeader>
+      <DialogContent className="w-full max-w-full p-0 border-none absolute left-1/2 transform -translate-x-1/2 shadow-xl h-auto max-h-full top-1/2 -translate-y-1/2 rounded-lg opacity-0 sm:w-[450px] md:w-[550px] lg:w-[980px] xl:w-[1170px] data-[state=open]:animate-fadeInForwards"
+        hiddenCloseBtn
+      >
+        <div className="relative">
+          <DialogClose className="fixed z-10 inline-flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-white shadow text-gray-600 transition duration-200 focus:outline-none focus:text-gray-800 focus:shadow-md hover:text-gray-800 hover:shadow-md -top-3 md:-top-4 -right-3 md:-right-4">
+            <IoIosClose className="h-7 w-7" />
+          </DialogClose>
+          <DialogHeader className="hidden">
+            <DialogTitle></DialogTitle>
+            <DialogDescription></DialogDescription>
+          </DialogHeader>
           <div className="h-full overflow-y-auto rounded-lg">
             <div className="flex items-center justify-center">
               <div className="w-full flex flex-col max-w-full max-h-full bg-white overflow-hidden rounded-md">
@@ -117,6 +125,7 @@ export const SubscribeModal = NiceModal.create(() => {
               </div>
             </div>
           </div>
+        </div>
       </DialogContent>
     </Dialog>
   );
