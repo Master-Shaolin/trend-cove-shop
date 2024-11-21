@@ -5,12 +5,12 @@ import IconSocial from "./IconSocial";
 
 const Footer = () => {
   return (
-    <footer className="border-b-4 border-heading mt-9 md:mt-11 lg:mt-16 3xl:mt-20 pt-2.5 lg:pt-0 2xl:pt-2">
+    <footer className="border-b-4 border-dark mt-9 md:mt-11 lg:mt-16 3xl:mt-20 pt-2.5 lg:pt-0 2xl:pt-2">
       <div className="mx-auto max-w-[1920px] px-4 md:px-8 2xl:px-16">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-9 xl:gap-5  pb-9 md:pb-14 lg:pb-16 2xl:pb-20 3xl:pb-24 lg:mb-0.5 2xl:mb-0 3xl:-mb-1 xl:grid-cols-6">
           {footerItems.map((footerItem, index) => (
             <div key={index} className="pb-3 md:pb-0">
-              <h4 className="mb-5 text-sm font-semibold text-heading md:text-base xl:text-lg 2xl:mb-6 3xl:mb-7">
+              <h4 className="mb-5 text-sm font-semibold text-dark md:text-base xl:text-lg 2xl:mb-6 3xl:mb-7">
                 {footerItem.title}
               </h4>
               <ul className="text-xs lg:text-sm text-body flex flex-col space-y-3 lg:space-y-3.5">

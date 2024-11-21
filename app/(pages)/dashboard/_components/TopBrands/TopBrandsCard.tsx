@@ -15,7 +15,7 @@ const TopBrandsCard = ({ src, name }: IProps) => {
           alt={name}
         />
       </div>
-      <h4 className="text-heading text-sm md:text-base xl:text-lg font-semibold capitalize">{name}</h4>
+      <h4 className="text-dark text-sm md:text-base xl:text-lg font-semibold capitalize">{name}</h4>
     </Link>
   );
 };
