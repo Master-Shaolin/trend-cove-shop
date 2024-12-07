@@ -18,6 +18,7 @@ const config: Config = {
         "light-gray": "hsl(var(--background-light-gray) / <alpha-value>)",
         "dark-blue": "hsl(var(--color-dark-blue) / <alpha-value>)",
         body: "hsl(var(--color-body) / <alpha-value>)",
+        "light-dark": "hsl(var(--background-light-dark) / <alpha-value>)",
       },
       keyframes: {
         "fade-in": {
