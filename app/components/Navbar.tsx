@@ -12,10 +12,12 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@radix-ui/react-navigation-menu";
+import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
 import { LuSearch } from "react-icons/lu";
 import { PiShoppingBag } from "react-icons/pi";
 import { Button } from "./ui/Button/Button";
+import logo from "/public/images/logo.png";
 
 interface NavbarProps {
   isScrolling: boolean;
@@ -36,7 +38,13 @@ const Navbar = ({ isScrolling }: NavbarProps) => {
       )}
     >
       <div className="flex items-center justify-center mx-auto max-w-[1920px] h-full w-full">
-        <NavigationMenu className="w-full h-full hidden lg:flex ltr:md:ml-6 rtl:md:mr-6 ltr:xl:ml-10 rtl:xl:mr-10">
+        <Link
+          href={""}
+          className="flex justify-center relative overflow-hidden w-40"
+        >
+          <img className="object-cover w-full rounded-md" src={logo.src} />
+        </Link>
+        <NavigationMenu className="w-full h-full hidden lg:flex ltr:md:ml-4 rtl:md:mr-4 ltr:xl:ml-6 rtl:xl:mr-6">
           <NavigationMenuList className="flex w-full h-full">
             <div className="flex relative">
               {navBarItems.map((navItem, navIndex) => (
@@ -107,7 +115,7 @@ const Navbar = ({ isScrolling }: NavbarProps) => {
               variant={"text"}
               size="text"
               className="text-sm font-semibold xl:text-base text-dark"
-              onClick={()=> handleSubscribeModal()}
+              onClick={() => handleSubscribeModal()}
             >
               Sing in
             </Button>

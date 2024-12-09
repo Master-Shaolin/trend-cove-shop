@@ -14,8 +14,9 @@ import {
 } from "@/components/Form";
 import { Button } from "@/components/ui/Button/Button";
 import { Input } from "@/components/ui/Input";
-import Link from "next/link";
 import { useSignInContext } from "./SignUpContext";
+
+import HeadLogo from "./HeadLogo";
 
 const formSchema = z.object({
   email: z
@@ -43,9 +44,7 @@ const ForgotPasswordForm = () => {
   return (
     <div>
       <div className="text-center mb-6 pt-2.5">
-        <div>
-          <Link className="inline-flex focus:outline-none" href={""}></Link>
-        </div>
+      <HeadLogo />
         <p className="mt-2 mb-8 text-sm md:text-base text-body sm:mb-10">
           We'll send you a link to reset your password
         </p>
