@@ -20,6 +20,8 @@ import { Input, PasswordInput } from "@/components/ui/Input";
 
 import { AiFillGoogleSquare } from "react-icons/ai";
 import { FaFacebookSquare } from "react-icons/fa";
+import HeadLogo from "./HeadLogo";
+
 
 const formSchema = z.object({
   name: z.string().min(1, {
@@ -55,9 +57,7 @@ const RegisterForm = () => {
   return (
     <div>
       <div className="text-center mb-6 pt-2.5">
-        <div>
-          <Link className="inline-flex focus:outline-none" href={""}></Link>
-        </div>
+        <HeadLogo />
         <p className="mt-2 mb-8 text-sm md:text-base text-body sm:mb-10">
           <span>By signing up, you agree to our </span>
           <Link

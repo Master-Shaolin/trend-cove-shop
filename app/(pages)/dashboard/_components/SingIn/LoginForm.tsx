@@ -4,7 +4,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
-import Link from "next/link";
 import { useSignInContext } from "./SignUpContext";
 
 import {
@@ -21,6 +20,7 @@ import { Input, PasswordInput } from "@/components/ui/Input";
 import { Switch } from "@/components/ui/Switch/Switch";
 import { AiFillGoogleSquare } from "react-icons/ai";
 import { FaFacebookSquare } from "react-icons/fa";
+import HeadLogo from "./HeadLogo";
 
 const formSchema = z.object({
   email: z
@@ -54,9 +54,7 @@ const LoginForm = () => {
   return (
     <div>
       <div className="text-center mb-6 pt-2.5">
-        <div>
-          <Link className="inline-flex focus:outline-none" href={""}></Link>
-        </div>
+        <HeadLogo />
         <p className="mt-2 mb-8 text-sm md:text-base text-body sm:mb-10">
           Login with your email & password
         </p>
