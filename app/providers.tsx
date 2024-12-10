@@ -1,6 +1,6 @@
 "use client";
 import NiceModal from "@ebay/nice-modal-react";
-import { SignInProvider } from "./(pages)/dashboard/_components/SingIn/SignUpContext";
+import { SignInProvider } from "./(pages)/(dashboard)/_components/SingIn/SignInContext";
 
 export function Providers(props: {
   children: React.ReactNode;
