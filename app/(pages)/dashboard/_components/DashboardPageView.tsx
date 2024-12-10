@@ -16,6 +16,7 @@ import CarouselShopCategory from "./CarouselShopCategory/CarouselShopCategory";
 import NewArrivalsSection from "./NewArrivals/NewArrivalsSection";
 import NewsLetterSection from "./NewsLetter/NewsLetterSection";
 import OtherNewsSection from "./OtherNews/OtherNewsSection";
+import { useSignInContext } from "./SingIn/SignUpContext";
 import { SubscribeModal } from "./SubscribeModal";
 import TopBrandsSection from "./TopBrands/TopBrandsSection";
 import banner1 from "/public/images/banner-1.jpg";
@@ -23,12 +24,22 @@ import banner2 from "/public/images/banner-2.jpg";
 
 const DashboardPageView = () => {
   const [isScrolling, setIsScrolling] = useState(false);
+  const { isModalOpen } = useSignInContext();
 
   useEffect(() => {
-    setTimeout(() => {
-      handleSubscribeModal()
+    if (isModalOpen) {
+      return
+    }
+
+    const newsLetterTimeOut = setTimeout(() => {
+      handleSubscribeModal();
     }, 2000);
 
+    return () => clearTimeout(newsLetterTimeOut);
+
+  }, [isModalOpen]);
+
+  useEffect(() => {
     const onscroll = () => {
       setIsScrolling(true);
       const scrolledTo = window.scrollY + window.innerHeight;
@@ -44,7 +55,7 @@ const DashboardPageView = () => {
         window.removeEventListener("scroll", onscroll);
       };
     }
-  }, []);
+  }, [isModalOpen]);
 
   const handleSubscribeModal = () => {
     NiceModal.show(SubscribeModal);

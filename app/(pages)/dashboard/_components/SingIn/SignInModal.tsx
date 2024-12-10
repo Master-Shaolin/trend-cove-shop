@@ -10,12 +10,14 @@ import {
 import NiceModal, { useModal } from "@ebay/nice-modal-react";
 import { IoIosClose } from "react-icons/io";
 import SignIn from "./SignIn";
-import { SignInProvider } from "./SignUpContext";
+import { useSignInContext } from "./SignUpContext";
 
 export const SignInModal = NiceModal.create(() => {
   const modal = useModal();
+  const { handleSetIsModalOpen } = useSignInContext();
 
   const handleModalOpen = (open: boolean) => {
+    handleSetIsModalOpen(open);
     if (!open) {
       modal.remove();
     }
@@ -36,9 +38,7 @@ export const SignInModal = NiceModal.create(() => {
             <DialogDescription></DialogDescription>
           </DialogHeader>
           <div className="w-full px-5 py-5 mx-auto overflow-hidden bg-white border border-gray-300 rounded-lg sm:w-96 md:w-[450px] sm:px-8">
-            <SignInProvider>
               <SignIn />
-            </SignInProvider>
           </div>
         </div>
       </DialogContent>

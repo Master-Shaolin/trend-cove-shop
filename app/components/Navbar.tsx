@@ -1,6 +1,7 @@
 "use client";
 
 import { SignInModal } from "@/(pages)/dashboard/_components/SingIn/SignInModal";
+import { useSignInContext } from "@/(pages)/dashboard/_components/SingIn/SignUpContext";
 import { cn } from "@/libs/utils";
 import { navBarItems } from "@/mock/MockData";
 import NiceModal from "@ebay/nice-modal-react";
@@ -24,7 +25,10 @@ interface NavbarProps {
 }
 
 const Navbar = ({ isScrolling }: NavbarProps) => {
+  const { handleSetIsModalOpen } = useSignInContext();
+
   const handleSubscribeModal = () => {
+    handleSetIsModalOpen(true);
     NiceModal.show(SignInModal);
   };
 
@@ -117,7 +121,7 @@ const Navbar = ({ isScrolling }: NavbarProps) => {
               className="text-sm font-semibold xl:text-base text-dark"
               onClick={() => handleSubscribeModal()}
             >
-              Sing in
+              Sign in
             </Button>
           </div>
           <Button
